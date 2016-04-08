@@ -39,6 +39,7 @@ public class CertidaoNascidoVivo {
         this.hora= tc.nextLine();
         System.out.println("Digite peso");
         this.peso= tc.nextFloat();
+
 */
     }
 
