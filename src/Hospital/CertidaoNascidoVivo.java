@@ -11,8 +11,8 @@ public class CertidaoNascidoVivo {
     * A certidão de nascido vivo é emitido pelo hospital,
      * contendo nome do hospital, nome do recém nascido ,
      * nome dos pais, peso, data de nascimento e hora do parto.
-    *
-    *
+
+ *
     * */
 
     String hospital;
@@ -27,7 +27,7 @@ public class CertidaoNascidoVivo {
         Scanner tc= new Scanner(System.in);
         System.out.println("Digite nome do Hospital");
         this.hospital= tc.nextLine();
-     /*   System.out.println("Digite nome do RN");
+       System.out.println("Digite nome do RN");
         this.nome= tc.nextLine();
         System.out.println("Digite nome do PAI");
         this.nomeP= tc.nextLine();
@@ -40,7 +40,6 @@ public class CertidaoNascidoVivo {
         System.out.println("Digite peso");
         this.peso= tc.nextFloat();
 
-*/
     }
 
 
