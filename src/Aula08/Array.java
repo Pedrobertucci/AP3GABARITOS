@@ -52,6 +52,8 @@ public class Array {
         f2.setSinopse("THE BEST ZOMBIE");
         f2.setAtorPrincipal(a);
 
+
+
         locadora.add(f2);
 
 
