@@ -11,9 +11,11 @@ public class Main {
         ArrayList<Livro> biblioteca = new ArrayList<>();
 
         do {
-            System.out.println("1- para add");
+            System.out.println("1- para add Livro");
             System.out.println("2- para rem");
             System.out.println("3- para list");
+            System.out.println("4- Aplicar descontos em todos Livros");
+            System.out.println("5- para add Ebook");
             op= tc.nextInt();
             switch (op){
                 case 1:{
@@ -34,6 +36,7 @@ public class Main {
                     }else{
                         System.out.println("Erro");
                     }
+                    break;
                 }
                 case 3:{
                     for (int i=0; i<biblioteca.size();i++){
@@ -42,14 +45,28 @@ public class Main {
                         System.out.println(l.toString());
 
                     }
+                    break;
                 }
                 case 4:{
                     for (int i=0; i<biblioteca.size();i++){
-                        Livro l= biblioteca.get(i);
+                        if (biblioteca.get(i) instanceof Livro){
+                            Livro l= biblioteca.get(i);
+                            l.aplicarDesconto(0.1);
+                        }else{
+                            Ebook e = (Ebook) biblioteca.get(i);
+                            e.aplicarDesconto(0.1);
 
-                        System.out.println(l.toString());
+                        }
+
+
 
                     }
+                    break;
+                }
+                case 5:{
+                    Ebook e= new Ebook();
+                    e.ler();
+                    biblioteca.add(e);
                 }
 
             }

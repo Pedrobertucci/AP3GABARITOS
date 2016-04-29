@@ -49,6 +49,7 @@ public class Livro {
         return   "titulo='" + this.getTitulo() + '\'' +
                 ", Autor=" + Autor +
                 ", isbn='" + isbn + '\'' +
+                ", Valor=" + this.valor +
                 '}';
     }
 
@@ -56,6 +57,8 @@ public class Livro {
         Scanner tc= new Scanner(System.in);
         System.out.println("Digite titulo");
         this.setTitulo(tc.next());
+        System.out.println("Digite Valor");
+        this.setValor(tc.nextDouble());
         System.out.println("Digite isbn ");
         this.setIsbn(tc.next());
         Aula10.Autor a = new Autor();
@@ -88,7 +91,7 @@ public class Livro {
     }
 
     public void aplicarDesconto(double p){
-        this.valor = this.valor * p;
+        this.valor = this.valor - this.valor * p;
 
     }
 
