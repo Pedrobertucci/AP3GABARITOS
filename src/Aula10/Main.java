@@ -9,7 +9,6 @@ public class Main {
         Scanner tc = new Scanner(System.in);
         int op=0;
         ArrayList<Livro> biblioteca = new ArrayList<>();
-
         do {
 
 
